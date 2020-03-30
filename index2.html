@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="screen">
+        <p class="answer">0.00</p>
+    </div>
+    <div class="container">
+    <div class="container-col col1">
+        <div class="container">
+            <button class="n0" onclick="reset()">Reset</button>
+            <button class="decimal" onclick="back()">Del.</button>
+        </div>
+
+        <div class="numbers">
+            <button class="r1 c1" onclick="nbr_input(1)">1</button>
+            <button class="r1 c2" onclick="nbr_input(2)">2</button>
+            <button class="r1 c3" onclick="nbr_input(3)">3</button>
+            <button class="r2 c1" onclick="nbr_input(4)">4</button>
+            <button class="r2 c2" onclick="nbr_input(5)">5</button>
+            <button class="r2 c3" onclick="nbr_input(6)">6</button>
+            <button class="r3 c1" onclick="nbr_input(7)">7</button>
+            <button class="r3 c2" onclick="nbr_input(8)">8</button>
+            <button class="r3 c3" onclick="nbr_input(9)">9</button>
+        </div>
+
+        <div class="container">
+            <button class="n0" onclick="nbr_input(0)">0</button>
+            <button class="decimal" onclick="decimal_input()">.</button>
+        </div>
+    </div>
+    <div class="container-col">
+        <button class="op" onclick="op_input('/')">/</button>
+        <button class="op" onclick="op_input('x')">x</button>
+        <button class="op" onclick="op_input('-')">-</button>
+        <button class="op" onclick="op_input('+')">+</button>
+        <button class="op egal" onclick="equal()">=</button>
+    </div>
+</div>
+</body>
+<script src="script/main.js"></script>
+</html>
